@@ -1,4 +1,5 @@
 # ESP8266_MQTT_Speaker
+Hacksmith Vlog #Null
 Simple MQTT Speaker utilizing "dfplayer mini" to play preloaded sounds
 
 The code has been simplified from the original and is ment to be used as a helper for your own original work.
