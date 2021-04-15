@@ -11,8 +11,8 @@ Most functionality is still within the project.
   * 4 - SD Card (Keep this under 32GB)
 
 ## Required Infrastructure
-  * 1 - MQTT - Cloud Hosted ([Something like this](https://www.hivemq.com/mqtt-cloud-broker/))
-  * 2 - MQTT - Self Hosted < I would chose this.Use it with a raspberry pie or VM. Google it :P
+  * 1 - MQTT - Self Hosted < I would chose this. Use it with a raspberry pie or VM. Google it :P
+  * 2 - MQTT - Cloud Hosted ([Something like this](https://www.hivemq.com/mqtt-cloud-broker/))
   
 ## Required Arduino Capable Board Libraries
   * 1 - ESP8266 ([Here is how to install it](https://randomnerdtutorials.com/how-to-install-esp8266-board-arduino-ide/))
