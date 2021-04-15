@@ -9,6 +9,10 @@ Most functionality is still within the project.
   * 2 - dfplayer mini
   * 3 - 4ohm or 8ohm speaker (4 watt MAX)
   * 4 - SD Card (Keep this under 32GB)
+
+## Required Infrastructure
+  * 1 - MQTT - Cloud Hosted ([https://www.hivemq.com/mqtt-cloud-broker/](https://randomnerdtutorials.com/how-to-install-esp8266-board-arduino-ide/))
+  * 2 - MQTT - Self Hosted < I would chose this.Use it with a raspberry pie or VM. Google it :P
   
 ## Required Arduino Capable Board Libraries
   * 1 - ESP8266 ([Here is how to install it](https://randomnerdtutorials.com/how-to-install-esp8266-board-arduino-ide/))
@@ -20,6 +24,23 @@ Most functionality is still within the project.
   * 4 - PubSubClient.h (MQTT)
   * 5 - DFrobotDFPlayerMini.h (For the audio Player)
   * 6 - StringSplitter.h
+
+
+## MQTT command for Playing file
+ * Topic : Hacksmith/Speaker/announce_speaker/1/announcement
+ * Msg   : 30^01^002
+ * Description : This will > Set Volume to 30 > Go into folder #1 > Play Audio clip labeled 001
+
+## MQTT command for Changing Volume
+ * Topic : Hacksmith/Speaker/announce_speaker/1/volume
+ * Msg   : 0 - 30
+ * Description : Sets the volume from 0(0%) to 30(100%)
+
+## MQTT command for Pausing Audio Playback
+ * Topic : Hacksmith/Speaker/announce_speaker/1/control
+ * Msg   : pause
+ * Description : Pauses current audio playback
+
 
 This is not the same as having a PA (Although it can be used as one for pre-baked msg's).
 This is for simple everyday announcements like doorbells, lunchtimes, deliveries...etc.
