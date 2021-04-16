@@ -1,9 +1,9 @@
 # ESP8266_MQTT_Speaker
 Hacksmith Vlog #Null
 
-Simple MQTT Speaker utilizing "dfplayer mini" to play preloaded sounds
+Simple MQTT Speaker utilizing "dfplayer mini" to play preloaded sounds.
 
-The code has been simplified from the original and is ment to be used as a helper for your own original work.
+The code has been simplified from the original and is meant to be used as a helper for your own original work.
 Most functionality is still within the project.
 
 ## Required Components
@@ -13,7 +13,7 @@ Most functionality is still within the project.
   * 4 - SD Card (Keep this under 32GB)
 
 ## Required Infrastructure
-  * 1 - MQTT - Self Hosted < I would chose this. Use it with a raspberry pie or VM. Google it :P
+  * 1 - MQTT - Self Hosted (I would chose this. Use it with a raspberry pie or VM. Google it for more information)
   * 2 - MQTT - Cloud Hosted ([Something like this](https://www.hivemq.com/mqtt-cloud-broker/))
   
 ## Required Arduino Capable Board Libraries
@@ -44,8 +44,8 @@ Most functionality is still within the project.
  * Description : Pauses current audio playback
 
 
-This is not the same as having a PA (Although it can be used as one for pre-baked msg's).
-This is for simple everyday announcements like doorbells, lunchtimes, deliveries...etc.
+This is not the same as having a PA (although it can be used as one for pre-baked msessages).
+This is for simple everyday announcements like doorbells, lunchtimes, deliveries, etc.
 
-Join the Hacksmith Discord If you wish to ask any questions or have any cool ideas.
+Join the Hacksmith Discord if you wish to ask any questions or have any cool ideas.
 [Join Discord Here!](https://discord.gg/thehacksmith)

@@ -37,7 +37,7 @@ PubSubClient client(espClient);
 char msg[MSG_BUFFER_SIZE];
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-//This is a visual Devider, yes you may remove it if you dont like it *********************************************
+//This is a visual divider. You may remove it like. ***************************************************************
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 void setup_wifi() {
@@ -160,7 +160,7 @@ void callback(char* topic, byte* payload, unsigned int length) {
 //*****************************************************************************************************************
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-//This Part is for MQTT and Wifi reconnection incase if EITHER has been droped
+//This Part is for MQTT and Wifi reconnection in case EITHER has dropped connection
 void reconnect() {
   // Loop until we're reconnected
   while (!client.connected()) {
@@ -214,7 +214,7 @@ void setup()
   }
   Serial.println(F("DFPlayer Mini online."));
 
-  myDFPlayer.setTimeOut(500); //Set serial communictaion time out 500ms
+  myDFPlayer.setTimeOut(500); //Set serial communication time-out 500ms
   Serial.println(F("Default : Serial Timeout 500ms"));
 
   //----Set volume----
@@ -306,7 +306,7 @@ void printDetail(uint8_t type, int value){
           Serial.println(F("Get Wrong Stack"));
           break;
         case CheckSumNotMatch:
-          Serial.println(F("Check Sum Not Match"));
+          Serial.println(F("Checksum Not Match"));
           break;
         case FileIndexOut:
           Serial.println(F("File Index Out of Bound"));
