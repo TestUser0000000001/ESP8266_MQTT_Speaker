@@ -160,7 +160,7 @@ void callback(char* topic, byte* payload, unsigned int length) {
 //*****************************************************************************************************************
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-//This Part is for MQTT and Wifi reconnection in case EITHER has been dropped connection
+//This Part is for MQTT and Wifi reconnection in case EITHER has dropped connection
 void reconnect() {
   // Loop until we're reconnected
   while (!client.connected()) {
